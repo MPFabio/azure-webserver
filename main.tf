@@ -93,7 +93,7 @@ resource "azurerm_linux_virtual_machine" "nginx" {
 
    computer_name = "nginx"
    admin_username = "fabio"
-   admin_password = "azerty123"
+   admin_password = "Azerty-123"
    disable_password_authentication = false
 
    os_disk {
