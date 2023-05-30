@@ -12,7 +12,7 @@ sudo sh install-docker.sh
 
 #Creating container
 sudo docker pull fabiomp/docker-nginx:latest
-sudo usermod -a -G docker $USER
+sudo usermod -aG docker $USER
 sudo systemctl enable docker
 sudo systemctl restart docker
 sudo docker run --name docker-nginx -d -p 8080:80 fabiomp/docker-nginx:latest
