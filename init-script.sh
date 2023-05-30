@@ -1,8 +1,6 @@
-!/bin/bash
-
 #Installing Docker
 sudo apt update && sudo apt upgrade -y
-sudo apt insall curl -y
+sudo apt intsall curl -y
 sudo curl -fsSL https://get.docker.com -o get-docker.sh 
 sudo sh get-docker.sh
 
