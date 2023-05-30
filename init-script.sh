@@ -16,4 +16,4 @@ sudo usermod -a -G docker $USER
 sudo systemctl enable docker
 sudo systemctl restart docker
 cd nginx-image 
-sudo docker run --name docker-nginx -p 8080:80 nginx:latest
+sudo docker run --name docker-nginx -d -p 8080:80 nginx:latest
