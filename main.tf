@@ -39,7 +39,7 @@ resource "azurerm_network_security_group" "allowedports" {
    }
 
     security_rule {
-       name = "http"
+       name = "custom"
        priority = 400
        direction = "Inbound"
        access = "Allow"
