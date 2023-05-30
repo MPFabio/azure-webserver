@@ -15,4 +15,5 @@ sudo wget https://github.com/https://github.com/MPFabio/azure-webserver.git
 sudo usermod -a -G docker $USER
 sudo systemctl enable docker
 sudo systemctl restart docker
+cd nginx-image 
 sudo docker run --name docker-nginx -p 8080:80 nginx:latest
