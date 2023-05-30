@@ -1,5 +1,5 @@
 resource "azurerm_resource_group" "webserver" {
-   name = "nginx-server"
+   name = "nginx-server-fabio"
    location = var.location
 }
 
