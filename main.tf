@@ -3,6 +3,12 @@ resource "azurerm_resource_group" "webserver" {
    location = var.location
 }
 
+
+resource "azurerm_network_interface_security_group_association" "nsgnic" {
+  network_interface_id      = azurerm_network_interface.webserver.id
+  network_security_group_id = azurerm_network_security_group.allowedports.id
+}
+
 resource "azurerm_network_security_group" "allowedports" {
    name = "allowedports"
    resource_group_name = azurerm_resource_group.webserver.name
