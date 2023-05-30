@@ -11,7 +11,7 @@ sudo sh install-docker.sh
 
 
 #Creating container
-sudo wget https://github.com/https://github.com/MPFabio/azure-webserver.git
+sudo wget https://github.com/MPFabio/azure-webserver.git
 sudo usermod -a -G docker $USER
 sudo systemctl enable docker
 sudo systemctl restart docker
